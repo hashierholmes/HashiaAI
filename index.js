@@ -3,9 +3,9 @@ const fs = require('fs').promises;
 const path = require('path');
 
 const config = require('./config');
-const { sendMessage, sendImage, sendTypingOn, sendTypingOff, setupMessengerProfile } = require('../services/messengerApi');
-const { loadSystemInstruction, handleTextMessage, handleImageMessage } = require('../services/geminiService');
-const { handlePinterest } = require('../services/pinterestService');
+const { sendMessage, sendImage, sendTypingOn, sendTypingOff, setupMessengerProfile } = require('./services/messengerApi');
+const { loadSystemInstruction, handleTextMessage, handleImageMessage } = require('./services/geminiService');
+const { handlePinterest } = require('./services/pinterestService');
 
 const app = express();
 const PORT = 3000;

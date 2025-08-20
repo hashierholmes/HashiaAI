@@ -11,7 +11,7 @@ const genAI = new GoogleGenerativeAI(config.GEMINI_API_KEY);
 
 async function loadSystemInstruction() {
   try {
-    systemInstruction = await fs.readFile(path.join(__dirname, 'systemInstruction', 'prompt.txt'), 'utf8');
+    systemInstruction = await fs.readFile(path.join(__dirname, '..', 'systemInstruction', 'prompt.txt'), 'utf8');
     console.log('System instruction loaded successfully.');
   } catch (error) {
     console.error('Error loading system instruction:', error);

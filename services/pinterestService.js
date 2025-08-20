@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { sendMessage, sendImage, sendTypingOff } = require('./services/messengerApi');
+const { sendMessage, sendImage, sendTypingOff } = require('./messengerApi');
 
 // HANDLE PINTEREST
 async function handlePinterest(senderId, messageText) {
