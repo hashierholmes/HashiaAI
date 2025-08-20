@@ -149,7 +149,7 @@ async function handlePostback(event, chatHistory) {
   let response;
   switch (payload) {
     case 'GET_STARTED':
-      response = 'Hello! I\'m Hashia your personal AI companion. I can help you with questions and analyze images you send me. How can I assist you today? 😊';
+      response = 'Hello! I\'m your personal AI companion. I can help you with questions and analyze images you send me. How can I assist you today? 😊';
       break;
     case 'CLEAR_HISTORY':
       chatHistory.delete(senderId);

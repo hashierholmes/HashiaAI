@@ -16,6 +16,12 @@ A Facebook Messenger chatbot powered by Google's Gemini AI that can handle text 
 - **Health Monitoring**: Built-in health check endpoint
 - **Graceful Shutdown**: Saves chat history before server shutdown
 
+## 📌 Prerequisites
+- Github Account (for repositoty and Vercel)
+- Google Account (for Gemini API)
+- Facebook Account (for Facebook Page)
+- Facebook Developer Account (for Setups)
+
 ## 📦 Installation
 
 To get your Hashia AI chatbot up and running quickly, you can fork this repository and deploy it directly to Vercel.
@@ -34,74 +40,55 @@ To get your Hashia AI chatbot up and running quickly, you can fork this reposito
 
 ### Step 1: Create Facebook App
 
-1. Go to [Facebook Developers](https://developers.facebook.com/)
-2. Click "Create App" → "Business" → "Next"
-3. Enter app name and contact email
-4. Click "Create App"
+1. Go to [Facebook Developers](https://developers.facebook.com/apps)
+1. "App details" → Enter app name and contact email
+3. "Use cases" → Select "Other"
+4. "Select an app type" → Select Business/Negosyo
+5. Click "Next" → "Create app"
 
 ### Step 2: Add Messenger Product
 
 1. In your app dashboard, click "Add Product"
 2. Find "Messenger" and click "Set Up"
-3. Scroll down to "Webhooks" section
 
 ### Step 3: Create Facebook Page
 
 1. Go to [Facebook Pages](https://www.facebook.com/pages/create)
 2. Create a new page for your business/bot
-3. Note down the Page ID
 
-### Step 4: Generate Page Access Token
+### Step 4: Generate Access Tokens
 
-1. In Messenger settings, find "Access Tokens" section
+1. Click "Connect"
 2. Select your page and generate token
 3. Copy the Page Access Token to your environment variables on Vercel.
 
-### Step 5: Setup Webhook
+### Step 5: Configure Webhook
 
 1. In Messenger → Webhooks, click "Add Callback URL"
 2. Enter your Vercel deployment URL followed by `/webhook`, e.g., `https://your-project-name.vercel.app/webhook`
 3. Enter your verify token (if you used `hashia` as default, use `hashia` here, otherwise use your custom token).
-4. Subscribe to these webhook fields:
+4. Click "Verify and save"
+
+### Step 6: Generate Access Tokens
+
+1. Click "Add Subscriptions"
+2. Subscribe to these webhook fields:
    - `messages`
    - `messaging_postbacks`
    - `messaging_optins`
    - `message_deliveries`
 
-### Step 6: Subscribe to Page
+### Step 7: For public use (optional)
 
-1. In "Webhooks" section, click "Add Subscriptions"
-2. Select your page and subscribe
-
-### Step 7: App Review (for public use)
-
-For public deployment, submit your app for review:
-1. Add Privacy Policy URL: `https://your-project-name.vercel.app/privacy`
-2. Add Terms of Service URL: `https://your-project-name.vercel.app/terms`
-3. Submit for "pages_messaging" permission
+1. Go to "App settings" click "Basic"
+2. Add Apps domain URL: `https://your-project-name.vercel.app/`
+3. Add Privacy Policy URL: `https://your-project-name.vercel.app/privacy`
+4. Add Terms of Service URL: `https://your-project-name.vercel.app/terms`
+5. Click "Save changes" (in the bottom))
 
 ## 🔑 Obtaining Gemini API Key
 
-### Step 1: Create Google Cloud Project
-
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select existing one
-3. Enable billing (required for Gemini API)
-
-### Step 2: Enable Generative AI API
-
-1. In Google Cloud Console, go to "APIs & Services" → "Library"
-2. Search for "Generative Language API"
-3. Click on it and press "Enable"
-
-### Step 3: Create API Key
-
-1. Go to "APIs & Services" → "Credentials"
-2. Click "Create Credentials" → "API Key"
-3. Copy the generated API key to your Vercel environment variables.
-4. (Recommended) Restrict the API key to Generative Language API only
-
-### Step 4: Alternative Method (Google AI Studio)
+### Alternative Method (Google AI Studio)
 
 1. Go to [Google AI Studio](https://aistudio.google.com/)
 2. Sign in with your Google account
