@@ -20,7 +20,7 @@ A Facebook Messenger chatbot powered by Google's Gemini AI that can handle text 
 - Github Account (for Repository and Vercel)
 - Google Account (for Gemini API)
 - Facebook Account (for Facebook Page)
-- Facebook Developer Account (for Setups)
+- Facebook Developer Account (for Main Configuration)
 
 ## 📦 Installation
 
