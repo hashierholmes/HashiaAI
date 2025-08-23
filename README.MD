@@ -160,7 +160,6 @@ Monitor these logs for issues:
 | `/webhook` | GET | Webhook verification |
 | `/webhook` | POST | Message processing |
 | `/health` | GET | Health check |
-| `/chat-history/:senderId` | GET | Debug chat history |
 | `/` | GET | Main landing page |
 | `/privacy` | GET | Privacy policy |
 | `/terms` | GET | Terms of service |
