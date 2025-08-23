@@ -16,8 +16,8 @@ A Facebook Messenger chatbot powered by Google's Gemini AI that can handle text 
 - **Health Monitoring**: Built-in health check endpoint
 - **Graceful Shutdown**: Saves chat history before server shutdown
 
-## 📌 Prerequisites
-- Github Account (for repositoty and Vercel)
+## 📌 Requirements 
+- Github Account (for Repository and Vercel)
 - Google Account (for Gemini API)
 - Facebook Account (for Facebook Page)
 - Facebook Developer Account (for Setups)
