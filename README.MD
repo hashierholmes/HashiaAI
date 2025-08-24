@@ -1,6 +1,6 @@
 # Hashia AI
 
-![Hashia AI Banner](banner/hashia-banner.jpg)
+![Hashia AI Banner](banner/hashia.jpg)
 
 A Facebook Messenger chatbot powered by Google's Gemini AI that can handle text conversations, analyze images, and fetch Pinterest images.
 
