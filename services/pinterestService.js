@@ -12,7 +12,7 @@ async function handlePinterest(senderId, messageText) {
 
     try {
         const prompt = input.join(" ");
-        const res = await axios.get(`https://hashier-api-v1.vercel.app/api/pinterest?search=${encodeURIComponent(prompt)}`);
+        const res = await axios.get(`https://hashia-pinterest.vercel.app/api?search=${encodeURIComponent(prompt)}`);
         const content = res.data.data;
 
         const uniqueUrls = [...new Set(content)].slice(0, 10);
