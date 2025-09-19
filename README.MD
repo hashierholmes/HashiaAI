@@ -1,10 +1,10 @@
 # Hashia AI
 
-![Hashia AI Banner](banner/hashia.jpg)
+![Hashia AI Banner](banner/banner.jpg)
 
 A Facebook Messenger chatbot powered by Google's Gemini AI that can handle text conversations, analyze images, and fetch Pinterest images.
 
-## 🌟 Features
+## Features
 
 - **AI-Powered Conversations**: Utilizes Google Gemini 2.0 Flash for intelligent responses
 - **Image Analysis**: Process and analyze images sent through Messenger
@@ -22,7 +22,7 @@ A Facebook Messenger chatbot powered by Google's Gemini AI that can handle text 
 - Facebook Account (for Facebook Page)
 - Facebook Developer Account (for Main Configuration)
 
-## 📦 Installation
+## Installation
 
 To get your Hashia AI chatbot up and running quickly, you can fork this repository and deploy it directly to Vercel.
 
@@ -86,7 +86,7 @@ To get your Hashia AI chatbot up and running quickly, you can fork this reposito
 4. Add Terms of Service URL: `https://your-project-name.vercel.app/terms`
 5. Click "Save changes" (in the bottom))
 
-## 🔑 Obtaining Gemini API Key
+## Obtaining Gemini API Key
 
 ### Alternative Method (Google AI Studio)
 
@@ -96,11 +96,11 @@ To get your Hashia AI chatbot up and running quickly, you can fork this reposito
 4. Select your Google Cloud project
 5. Copy the generated key to your Vercel environment variables.
 
-## 🚀 Deployment
+## Deployment
 
 Your project will be automatically deployed to Vercel upon pushing to your `main` branch after the initial setup. Ensure your `FACEBOOK_PAGE_ACCESS_TOKEN` and `GEMINI_API_KEY` are set in your Vercel environment variables.
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -153,7 +153,7 @@ Monitor these logs for issues:
 - Image download failures
 - Pinterest API calls
 
-## 📊 API Endpoints
+## API Endpoints
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
@@ -164,7 +164,7 @@ Monitor these logs for issues:
 | `/privacy` | GET | Privacy policy |
 | `/terms` | GET | Terms of service |
 
-## 🔒 Security Considerations
+## Security Considerations
 
 1. **Environment Variables**: Never commit API keys to version control
 2. **Webhook Verification**: Always verify Facebook webhook signatures in production
